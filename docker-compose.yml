@@ -1,6 +1,10 @@
+web:
+  build: .
+  command: 'bash -c ''/app/wrk.sh'''
+  working_dir: /app/user
+  environment:
 wrk:
   build: .
   command: 'bash -c ''/app/wrk.sh'''
   working_dir: /app/user
   environment:
-shell: null
