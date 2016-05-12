@@ -1,3 +1,12 @@
+# heroku deploy
+
+```
+heroku create appname
+heroku config:set -a appname THREADS=4 CONNECTIONS=100 RATE=1000 DURATION=1m URL=http://some.url.com/to-test
+heroku docker:release -a appname
+heroku scale wrk=1
+```
+
 # wrk2
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/giltene/wrk2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
